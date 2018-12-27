@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 05, 2018 at 08:14 PM
--- Server version: 10.1.19-MariaDB
+-- Generation Time: Dec 27, 2018 at 10:36 PM
+-- Server version: 5.7.19
 -- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -42,9 +42,9 @@ INSERT INTO `etudiants` (`num`, `nom`, `prenom`, `filiere`) VALUES
 (2, 'benkirane', 'aicha', 'MS-ISI'),
 (3, 'zaimi', 'amine', 'MS-ISI'),
 (4, 'youssefi', 'hamza', 'MS-ISI'),
-(5, 'bencharki', 'khansae', 'MS-ISI'),
 (6, 'jilali', 'ilyas', 'MS-SD'),
-(7, 'berradi', 'ali', 'MS-SD');
+(7, 'berradi', 'ali', 'MS-ISI'),
+(11, 'LBIDAOUI', 'MOUAD', 'LP-WEB');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE `modules` (
 
 INSERT INTO `modules` (`id`, `intitule`) VALUES
 (1, 'Traitement des documents électroniques'),
-(2, 'Ingegnerie des systèmes d\'informations'),
+(2, 'Ingenerie des systèmes d\'informations'),
 (3, 'Programmation web'),
 (4, 'Programmation avancée'),
 (5, 'Conception orientée objet des SI');
@@ -173,17 +173,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `etudiants`
 --
 ALTER TABLE `etudiants`
-  MODIFY `num` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `num` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `modules`
 --
 ALTER TABLE `modules`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `semestres`
 --
 ALTER TABLE `semestres`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `users`
 --
